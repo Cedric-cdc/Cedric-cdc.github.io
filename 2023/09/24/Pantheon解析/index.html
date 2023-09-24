@@ -4,15 +4,19 @@
   <meta charset="utf-8">
   
   
-  <title>Cedric`s Blog</title>
+  <title>Pantheon解析 | Cedric`s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Cedric&#96;s Blog">
-<meta property="og:url" content="https://cedric-cdc.github.io/index.html">
+  <meta name="description" content="Pantheon of Congestion ControlPantheon&#x2F;ˈpænθiɑːn&#x2F;包含许多拥塞控制方案，Pantheon使它们能够在共同的接口上运行，并具有基准测试和比较其性能的工具。Pantheon测试可以在本地使用mahimahi仿真链路进行测试，也可以通过互联网连接远程机器进行测试。 Pantheon的源代码链接：StanfordSNR&#x2F;pant">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Pantheon解析">
+<meta property="og:url" content="https://cedric-cdc.github.io/2023/09/24/Pantheon%E8%A7%A3%E6%9E%90/index.html">
 <meta property="og:site_name" content="Cedric&#96;s Blog">
+<meta property="og:description" content="Pantheon of Congestion ControlPantheon&#x2F;ˈpænθiɑːn&#x2F;包含许多拥塞控制方案，Pantheon使它们能够在共同的接口上运行，并具有基准测试和比较其性能的工具。Pantheon测试可以在本地使用mahimahi仿真链路进行测试，也可以通过互联网连接远程机器进行测试。 Pantheon的源代码链接：StanfordSNR&#x2F;pant">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2023-09-24T07:54:30.000Z">
+<meta property="article:modified_time" content="2023-09-24T07:54:30.000Z">
 <meta property="article:author" content="Cedric Chan">
-<meta property="article:tag" content="陈德程 北京邮电大学">
+<meta property="article:tag" content="拥塞控制">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternate" href="/atom.xml" title="Cedric`s Blog" type="application/atom+xml">
@@ -76,9 +80,7 @@
 </header>
 
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-Pantheon解析" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-Pantheon解析" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2023/09/24/Pantheon%E8%A7%A3%E6%9E%90/" class="article-date">
   <time class="dt-published" datetime="2023-09-24T07:54:30.000Z" itemprop="datePublished">2023-09-24</time>
@@ -95,8 +97,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2023/09/24/Pantheon%E8%A7%A3%E6%9E%90/">Pantheon解析</a>
+    <h1 class="p-name article-title" itemprop="headline name">
+      Pantheon解析
     </h1>
   
 
@@ -185,261 +187,19 @@
     </footer>
   </div>
   
-</article>
-
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-第1章-经济学十大原理" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2023/09/23/%E7%AC%AC1%E7%AB%A0-%E7%BB%8F%E6%B5%8E%E5%AD%A6%E5%8D%81%E5%A4%A7%E5%8E%9F%E7%90%86/" class="article-date">
-  <time class="dt-published" datetime="2023-09-23T10:35:41.000Z" itemprop="datePublished">2023-09-23</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E7%BB%8F%E6%B5%8E%E5%AD%A6%E5%8F%82%E8%80%83/">经济学参考</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2023/09/23/%E7%AC%AC1%E7%AB%A0-%E7%BB%8F%E6%B5%8E%E5%AD%A6%E5%8D%81%E5%A4%A7%E5%8E%9F%E7%90%86/">第1章 经济学十大原理</a>
-    </h1>
+    <a href="/2023/09/23/%E7%AC%AC1%E7%AB%A0-%E7%BB%8F%E6%B5%8E%E5%AD%A6%E5%8D%81%E5%A4%A7%E5%8E%9F%E7%90%86/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">后一篇</strong>
+      <div class="article-nav-title">第1章 经济学十大原理</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h1 id="经济学原理·微观经济学"><a href="#经济学原理·微观经济学" class="headerlink" title="经济学原理·微观经济学"></a>经济学原理·微观经济学</h1><h3 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h3><p>以下内容是博主在学习翻阅曼昆的《经济学原理·微观经济学》时摘录的重要知识点，绝大部分是课本的原话，博主自己的理解会以引用的格式穿插其中。另外，学会知识的最佳方式是应用，参考数学的”刷题“思路，博主在笔记中保留了完整的所有习题，包括即问即答。博主自己会在学习的过程中，逐步地把这些问题自己的答案更新出来，以加深对所学内容的理解，非标准答案，仅供参考。</p>
-<p>[toc]</p>
-<h2 id="第1章-经济学十大原理"><a href="#第1章-经济学十大原理" class="headerlink" title="第1章 经济学十大原理"></a>第1章 经济学十大原理</h2><p>稀缺性（scarcity）：社会资源的有限性。<br>经济学（economics）：研究社会如何管理自己的稀缺资源。在大多数社会中，资源并不是由一个全权的独裁者来配置，而是通过千百万家庭和企业的共同选择来配置的。因此，经济学家研究：</p>
-<ul>
-<li>人们如何做出决策：他们做多少工作、购买什么、储蓄多少，以及如何把储蓄用于投资；</li>
-<li>人们如何相互影响：经济学家考察一种物品的众多买者与卖者如何共同决定该物品的销售价格和销售量。</li>
-<li>分析影响整个经济的力量和趋势：包括平均收入的增长、找不到工作的人占总人口的比例，以及价格上升的速度。</li>
-</ul>
-<h3 id="1-1-人们如何做出决策"><a href="#1-1-人们如何做出决策" class="headerlink" title="1.1 人们如何做出决策"></a>1.1 人们如何做出决策</h3><h4 id="1-1-1-原理一：人们面临权衡取舍"><a href="#1-1-1-原理一：人们面临权衡取舍" class="headerlink" title="1.1.1 原理一：人们面临权衡取舍"></a>1.1.1 原理一：人们面临权衡取舍</h4><p>社会面临的经典权衡取舍：</p>
-<ul>
-<li>“大炮与黄油”：国防支出与提升生活水平</li>
-<li>效率与平等</li>
-</ul>
-<p>效率（efficiency）：社会能从其稀缺资源中得到最大利益的特性。<br>平等（equality）：经济成果在社会成员中平均分配的特性。<br>效率是指，经济蛋糕的大小，而平等是指如何分割这块蛋糕。在设计政府政策时，这两个目标往往时不一致的，需要权衡取舍。</p>
-<h4 id="1-1-2-原理二：某种东西的成本是为了得到它所放弃的东西"><a href="#1-1-2-原理二：某种东西的成本是为了得到它所放弃的东西" class="headerlink" title="1.1.2 原理二：某种东西的成本是为了得到它所放弃的东西"></a>1.1.2 原理二：某种东西的成本是为了得到它所放弃的东西</h4><p>由于面临权衡取舍，因此需要比较不同选择之间的成本与效益，而这并不是一目了然的。<br>某种东西的<strong>机会成本（opportunity）</strong>：是为了得到这种东西所放弃的东西。</p>
-<h4 id="1-1-3-原理三：理性人考虑边际量"><a href="#1-1-3-原理三：理性人考虑边际量" class="headerlink" title="1.1.3 原理三：理性人考虑边际量"></a>1.1.3 原理三：理性人考虑边际量</h4><p>经济学家通常假设，人是理性的。<br>理性人：系统而有目的地尽最大努力实现其目标的人。<br>理性人知道，生活中的许多决策很少是黑与白的选择，而往往是介于其间的灰色地带。<br>边际变动：对行动计划的微小增量调整。<br><strong>理性人通常通过比较边际收益（marginal benefit）与边际成本（marginal cost）来做决策。</strong>当且仅当一种行为的边际收益大于边际成本时，一个理性决策者才会采取这种行为。<br>例子：水与砖石的价格。</p>
-<h4 id="1-1-4-原理四：人们会对激励做出反应"><a href="#1-1-4-原理四：人们会对激励做出反应" class="headerlink" title="1.1.4 原理四：人们会对激励做出反应"></a>1.1.4 原理四：人们会对激励做出反应</h4><p>激励（incentive）：引起一个人做出某种行为的某种东西。<br>案例：汽油价格的激励效应，导致了很多很有趣的社会反应。</p>
-<blockquote>
-<p><strong>即问即答</strong></p>
-<ul>
-<li>描述一个你最近面临的重要权衡取舍问题。</li>
-<li>举出一个既有货币性的机会又有非货币性的机会成本的行动的例子。</li>
-<li>描述一个你的父母为了努力影响你的行为而向你提供激励的例子。</li>
-</ul>
-</blockquote>
-<h3 id="1-2-人们如何相互影响"><a href="#1-2-人们如何相互影响" class="headerlink" title="1.2 人们如何相互影响"></a>1.2 人们如何相互影响</h3><h4 id="1-2-1-原理五：贸易可以使每个人的状况变得更好"><a href="#1-2-1-原理五：贸易可以使每个人的状况变得更好" class="headerlink" title="1.2.1 原理五：贸易可以使每个人的状况变得更好"></a>1.2.1 原理五：贸易可以使每个人的状况变得更好</h4><p>国家和家庭的经济一样，既存在竞争，也存在合作，都能从相互贸易中获益。</p>
-<h4 id="1-2-2-原理六：市场通常是组织经济活动的一种好方法"><a href="#1-2-2-原理六：市场通常是组织经济活动的一种好方法" class="headerlink" title="1.2.2 原理六：市场通常是组织经济活动的一种好方法"></a>1.2.2 原理六：市场通常是组织经济活动的一种好方法</h4><p>中央计划经济国家运行的前提假设是，政府官员能够最佳地配置经济中地稀缺资源。<em><strong>然而这个前提往往是不成立的，人治的社会并非机器地执行最优化算法。</strong></em></p>
-<p><strong>市场经济</strong>（market economy）：当许多企业和家庭在物品与服务市场上相互交易时，通过他们的分散决策配置资源的经济。</p>
-<blockquote>
-<p>请给我们我想要的东西吧，同时，你也可以获得你想要的东西：这句话是交易的通义。</p>
-</blockquote>
-<p>经济学家亚当·私密（Adam Smith）在其1776年出版的著作《国民财富的性质和原因的研究》中提出了全部经济学中最著名的观察结果：家庭和企业在市场上相互交易，他们仿佛被一只<em><strong>“看不见的手“</strong></em>所指引，并导致了合意的市场结果。价格就是看不见的手用来指引经济活动的工具。</p>
-<h4 id="1-2-3-原理七：政府有时可以改善市场结果"><a href="#1-2-3-原理七：政府有时可以改善市场结果" class="headerlink" title="1.2.3 原理七：政府有时可以改善市场结果"></a>1.2.3 原理七：政府有时可以改善市场结果</h4><p>我们需要政府的两个原因：</p>
-<ul>
-<li><p>只有在政府事实规则并维持对市场经济至关重要的制度时，看不见的手才能施展其魔力。最重要的是，市场经济需要实施<strong>产权（property rights）</strong>的制度，以便个人可以拥有和控制稀缺资源。</p>
-</li>
-<li><p>看不见的手是强有力的，但并不是无所不能的。政府干预经济并改变人们自己选择的配置的原因有两类：促进效率或促进公平。这就是说，大多数政策的目标要么是把经济蛋糕做大，要么是改变这个蛋糕的分割方式。</p>
-</li>
-</ul>
-<p>先考虑效率目标：看不见的手有可能会导致<strong>市场失灵</strong>，一个可能原因是外部性（例子：环境污染），另一个可能原因是<strong>市场势力</strong>。<br>再考虑平等目标：即使看不见的手带来了有效率的产出，它也不能消除经济福利上巨大的不对称。<strong>看不见的手并没有保证每个人都有充足的食物、体面的衣服和充分的医疗保健</strong>。根据某种政治哲学，这种不平等要求政府进行干预。</p>
-<p>市场失灵（market failure）：市场本身不能有效配置资源的情况。<br>外部性（externality）：一个人的行为对旁观者福利的影响。<br>市场势力（market power）：单个经济活动者（或某个经济活动小群体）对市场价格有显著影响的能力。</p>
-<blockquote>
-<p><strong>即问即答</strong></p>
-<ul>
-<li>为什么一个国家如果不把自己和其他国家隔离开来，其状况会变得更好？</li>
-<li>为什么我们有市场？根据经济学家的观点，政府应当在市场中扮演怎样的角色？</li>
-</ul>
-</blockquote>
-<h3 id="1-3-整体经济如何运行"><a href="#1-3-整体经济如何运行" class="headerlink" title="1.3 整体经济如何运行"></a>1.3 整体经济如何运行</h3><h4 id="1-3-1-原理八：一国的生活水平取决于它生产物品与服务的能力"><a href="#1-3-1-原理八：一国的生活水平取决于它生产物品与服务的能力" class="headerlink" title="1.3.1 原理八：一国的生活水平取决于它生产物品与服务的能力"></a>1.3.1 原理八：一国的生活水平取决于它生产物品与服务的能力</h4><p>生产率（productivity）：每单位劳动投入所生产的物品与服务数量。</p>
-<p>几乎所有生活水平的差别都可以归因于各国生产率的差别。同样，一国生产率的增长率决定了它的平均收入的增长率。</p>
-<p>为了提高生活水平，决策者需要通过让工人收到良好的教育、拥有生产物品与服务需要的工具以及获取最好的技术来提高生产率。</p>
-<h4 id="1-3-2-原理九：当政府发行了过多货币时，物价上升"><a href="#1-3-2-原理九：当政府发行了过多货币时，物价上升" class="headerlink" title="1.3.2 原理九：当政府发行了过多货币时，物价上升"></a>1.3.2 原理九：当政府发行了过多货币时，物价上升</h4><p>通货膨胀（inflation）：经济中物价总水平的上升。</p>
-<h4 id="1-3-3-原理十：社会面临通货膨胀与失业之间的短期权衡取舍"><a href="#1-3-3-原理十：社会面临通货膨胀与失业之间的短期权衡取舍" class="headerlink" title="1.3.3 原理十：社会面临通货膨胀与失业之间的短期权衡取舍"></a>1.3.3 原理十：社会面临通货膨胀与失业之间的短期权衡取舍</h4><p>大多数经济学家这样描述<strong>货币注入的短期效应</strong>：</p>
-<ul>
-<li>经济中货币量增加刺激了社会的整体支出水平，从而增加了对物品与服务的需求。</li>
-<li>需求的增加随着时间推移，会引起企业提高物价，但同时，它也鼓励企业雇佣更多的工人，并生产更多的物品与服务。</li>
-<li>雇佣更多的工人意味着更少的失业。</li>
-</ul>
-<p>上述推理过程得出一种在整个经济范围内的一种最终的权衡取舍：通货膨胀与失业之间的短期权衡取舍。这种权衡取舍关系在分析经济周期中起着关键作用。</p>
-<p><strong>经济周期（business cycle）</strong>：就业和生产等经济活动的波动。经济周期是用生产的物品与服务质量或雇佣的人数来衡量的，经济活动的无规律的、很大程度上无法预测的波动。</p>
-<p><strong>破窗谬论。</strong></p>
-<p><strong>经济学专业人士了解一种非直观的事实，即真正的进步来自于岗位的消灭。</strong></p>
-<blockquote>
-<p><strong>即问即答</strong></p>
-<ul>
-<li>列出并简要解释描述整体经济如何运行的三个原理。</li>
-</ul>
-</blockquote>
-<h3 id="1-4-结论（经济学十大原理）"><a href="#1-4-结论（经济学十大原理）" class="headerlink" title="1.4 结论（经济学十大原理）"></a>1.4 结论（经济学十大原理）</h3><p>人们如何做出决策：</p>
-<ol>
-<li>人们面临权衡取舍</li>
-<li>某种东西的成本是为了得到它所放弃的东西（机会成本）</li>
-<li>理性人考虑边际量（边际效用）</li>
-<li>人们会对激励做出反应</li>
-</ol>
-<p>人们如何相互影响：</p>
-<ol start="5">
-<li>贸易可以使每个人的状况都变得更好</li>
-<li>市场通常是组织经济活动的一种好方法</li>
-<li>政府有时可以改善市场结果</li>
-</ol>
-<p>整体经济如何运行：</p>
-<ol start="8">
-<li>一国的生活水平取决于它生产物品与服务的能力</li>
-<li>当政府发行了过多货币时，物价上升</li>
-<li>社会面临通货膨胀与失业之间的短期权衡取舍</li>
-</ol>
-<p><img src="/2023/09/23/%E7%AC%AC1%E7%AB%A0-%E7%BB%8F%E6%B5%8E%E5%AD%A6%E5%8D%81%E5%A4%A7%E5%8E%9F%E7%90%86/%E7%AC%AC%E4%B8%80%E7%AB%A0%E4%B9%A0%E9%A2%981.png"></p>
-<p><img src="/2023/09/23/%E7%AC%AC1%E7%AB%A0-%E7%BB%8F%E6%B5%8E%E5%AD%A6%E5%8D%81%E5%A4%A7%E5%8E%9F%E7%90%86/%E7%AC%AC%E4%B8%80%E7%AB%A0%E4%B9%A0%E9%A2%982.png"></p>
-<p><img src="/2023/09/23/%E7%AC%AC1%E7%AB%A0-%E7%BB%8F%E6%B5%8E%E5%AD%A6%E5%8D%81%E5%A4%A7%E5%8E%9F%E7%90%86/%E7%AC%AC%E4%B8%80%E7%AB%A0%E4%B9%A0%E9%A2%983.png"></p>
-<p><img src="/2023/09/23/%E7%AC%AC1%E7%AB%A0-%E7%BB%8F%E6%B5%8E%E5%AD%A6%E5%8D%81%E5%A4%A7%E5%8E%9F%E7%90%86/%E7%AC%AC%E4%B8%80%E7%AB%A0%E4%B9%A0%E9%A2%984.png"></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://cedric-cdc.github.io/2023/09/23/%E7%AC%AC1%E7%AB%A0-%E7%BB%8F%E6%B5%8E%E5%AD%A6%E5%8D%81%E5%A4%A7%E5%8E%9F%E7%90%86/" data-id="clmvwg1h10000z8v33tylew5c" data-title="第1章 经济学十大原理" class="article-share-link"><span class="fa fa-share">分享</span></a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%9B%BC%E6%98%86%E3%80%8A%E7%BB%8F%E6%B5%8E%E5%AD%A6%E5%8E%9F%E7%90%86%C2%B7%E5%BE%AE%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6%E3%80%8B/" rel="tag">曼昆《经济学原理·微观经济学》</a></li></ul>
-
-    </footer>
-  </div>
   
 </article>
-
-
-
-  
-    <article id="post-Midjourney-AI绘图" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2023/09/23/Midjourney-AI%E7%BB%98%E5%9B%BE/" class="article-date">
-  <time class="dt-published" datetime="2023-09-23T07:10:26.000Z" itemprop="datePublished">2023-09-23</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/">技术博客</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2023/09/23/Midjourney-AI%E7%BB%98%E5%9B%BE/">Midjourney-AI绘图</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h4 id="Midjourney是什么？"><a href="#Midjourney是什么？" class="headerlink" title="Midjourney是什么？"></a>Midjourney是什么？</h4><p><strong>Midjourney不是一个独立的软件，是集成在一个社交软件discord里的一个小机器人。类似于微信或者钉钉的脚本，只需要把Midjourney拉进服务器里（我们所理解的“群”），并与之对话，它就能根据文字描述生成图像。</strong></p>
-<p>Midjourney是一个由Midjourney研究实验室开发的人工智能程序，可根据文本生成图像，于2022年7月12日进入公开测试阶段，使用者可通过Discord的机器人指令进行操作，可以创作出很多的图像作品。</p>
-<p>以下这些功能它都可以实现.</p>
-<p>人像卡通化：将人物照片转换成有趣的卡通形象。</p>
-<p>轮廓生成：可以根据输入的文字描述生成对应的图像轮廓。</p>
-<p>色彩生成：利用GAN模型，可以生成具有艺术感和创意的彩色图像。</p>
-<p>视频换脸：可以实现对视频中人物的面部进行换脸操作。</p>
-<p>视觉问答：通过图像识别和自然语言处理技术，可以实现对图像的问题回答。</p>
-<p>人脸合成：可以将不同人物的面部特征进行合成，生成新的面孔。</p>
-<p>以上这些技术和工具，涉及到计算机视觉、自然语言处理、深度学习等多个领域，具有很高的技术含量和实用性。同时，这些技术和工具也为数字艺术和创意产业提供了新的可能性和创新空间。</p>
-<h4 id="Midjourney如何使用？"><a href="#Midjourney如何使用？" class="headerlink" title="Midjourney如何使用？"></a>Midjourney如何使用？</h4><p>首先，需要下载社交软件[discord](<a target="_blank" rel="noopener" href="https://discord.com/">Discord | A place to play and chat</a>)。</p>
-<p><img src="/2023/09/23/Midjourney-AI%E7%BB%98%E5%9B%BE/discord%E4%B8%8B%E8%BD%BD.png" alt="官网下载页面"></p>
-<p>然后，安装、注册登录。注册和登录需要科学上网，不细说。</p>
-<p><img src="/2023/09/23/Midjourney-AI%E7%BB%98%E5%9B%BE/discord%E7%99%BB%E5%BD%95%E5%90%8E%E9%A1%B5%E9%9D%A2.png" alt="注册登录后的页面"></p>
-<p>如果需要使用Midjourney，需要创建自己的服务器（“钉钉群”），点击绿色的“+”号，add a server。创建好服务器后的页面如下，点击左上小图标就可以进入刚创建的服务器。</p>
-<p><img src="/2023/09/23/Midjourney-AI%E7%BB%98%E5%9B%BE/discord%E5%88%9B%E5%BB%BA%E5%AE%8C%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%90%8E.png" alt="创建完服务器后的页面"></p>
-<p>下一步，需要把Midjourney聊天机器人拉到服务器（群）里来。</p>
-<p>先点击左边的绿色图标，探索公共服务器（群），在此界面搜索跟Midjourney相关的群。</p>
-<p><img src="/2023/09/23/Midjourney-AI%E7%BB%98%E5%9B%BE/%E6%90%9C%E7%B4%A2Midjourney.png" alt="搜索Midjourney"></p>
-<p>然后，进入任意的有Midjourney Bot的服务器（群）里，在右侧服务器（群）成员里找到Midjourney Bot，将它添加至自己创建的服务器。</p>
-<p><img src="/2023/09/23/Midjourney-AI%E7%BB%98%E5%9B%BE/%E6%89%BE%E5%88%B0MidjourneyBot.png" alt="找到Midjourney Bot"> </p>
-<p>随后，回到自己刚添加了MidjourneyBot的服务器（群），在聊天框里输入&#x2F;imagine，就会有提示让用户输入Midjourney生成的指令，即能够使用Midjourney进行AI绘图了。</p>
-<p><img src="/2023/09/23/Midjourney-AI%E7%BB%98%E5%9B%BE/%E5%85%A5%E9%97%A8%E6%8C%87%E4%BB%A4.png" alt="入门指令"></p>
-<h4 id="特别说明"><a href="#特别说明" class="headerlink" title="特别说明"></a>特别说明</h4><p>上述使用教程概要只是提供零基础读者与Midjourney的一条使用通道，具体Midjourney丰富的功能有很多其它的指令，可以通过Midjourney或discord里的提示进一步学会深度应用这个AI工具。</p>
-<p>由于Midjourney使用人数比较爆满，目前已经不给免费的使用额度，需要充值，根据实际情况以及MidjourneyBot的提示进行操作即可。</p>
-<p>内容是博主根据视频进行整理，来源于B站：<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1ZN411U7vx/?spm_id_from=333.337.search-card.all.click&vd_source=50fd21a005ad252a49841895417a1b26">【Midjourney教程】第1集-介绍、注册、添加、使用_哔哩哔哩_bilibili</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://cedric-cdc.github.io/2023/09/23/Midjourney-AI%E7%BB%98%E5%9B%BE/" data-id="clmvoz0zg0000rgv3e0fr5syi" data-title="Midjourney-AI绘图" class="article-share-link"><span class="fa fa-share">分享</span></a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/AI/" rel="tag">AI</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-个人简介" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2023/09/23/%E4%B8%AA%E4%BA%BA%E7%AE%80%E4%BB%8B/" class="article-date">
-  <time class="dt-published" datetime="2023-09-23T05:06:26.000Z" itemprop="datePublished">2023-09-23</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/About-me/">About me</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2023/09/23/%E4%B8%AA%E4%BA%BA%E7%AE%80%E4%BB%8B/">个人简介</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p><img src="/2023/09/23/%E4%B8%AA%E4%BA%BA%E7%AE%80%E4%BB%8B/%E6%96%AF%E8%8E%B1%E7%89%B9%E6%9E%97.jpg" alt="个人形象照"></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://cedric-cdc.github.io/2023/09/23/%E4%B8%AA%E4%BA%BA%E7%AE%80%E4%BB%8B/" data-id="clmvldkqe000070v304tl084o" data-title="个人简介" class="article-share-link"><span class="fa fa-share">分享</span></a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/About-me/" rel="tag">About me</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
 
 
 </section>
