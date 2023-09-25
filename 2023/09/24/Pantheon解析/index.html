@@ -6,15 +6,15 @@
   
   <title>Pantheon解析 | Cedric`s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Pantheon of Congestion ControlPantheon&#x2F;ˈpænθiɑːn&#x2F;包含许多拥塞控制方案，Pantheon使它们能够在共同的接口上运行，并具有基准测试和比较其性能的工具。Pantheon测试可以在本地使用mahimahi仿真链路进行测试，也可以通过互联网连接远程机器进行测试。 Pantheon的源代码链接：StanfordSNR&#x2F;pant">
+  <meta name="description" content="[toc]  Pantheon of Congestion ControlPantheon&#x2F;ˈpænθiɑːn&#x2F;包含许多拥塞控制方案，Pantheon使它们能够在共同的接口上运行，并具有基准测试和比较其性能的工具。Pantheon测试可以在本地使用mahimahi仿真链路进行测试，也可以通过互联网连接远程机器进行测试。 Pantheon的源代码链接：StanfordSNR&amp;#x">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Pantheon解析">
 <meta property="og:url" content="https://cedric-cdc.github.io/2023/09/24/Pantheon%E8%A7%A3%E6%9E%90/index.html">
 <meta property="og:site_name" content="Cedric&#96;s Blog">
-<meta property="og:description" content="Pantheon of Congestion ControlPantheon&#x2F;ˈpænθiɑːn&#x2F;包含许多拥塞控制方案，Pantheon使它们能够在共同的接口上运行，并具有基准测试和比较其性能的工具。Pantheon测试可以在本地使用mahimahi仿真链路进行测试，也可以通过互联网连接远程机器进行测试。 Pantheon的源代码链接：StanfordSNR&#x2F;pant">
+<meta property="og:description" content="[toc]  Pantheon of Congestion ControlPantheon&#x2F;ˈpænθiɑːn&#x2F;包含许多拥塞控制方案，Pantheon使它们能够在共同的接口上运行，并具有基准测试和比较其性能的工具。Pantheon测试可以在本地使用mahimahi仿真链路进行测试，也可以通过互联网连接远程机器进行测试。 Pantheon的源代码链接：StanfordSNR&amp;#x">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-09-24T07:54:30.000Z">
-<meta property="article:modified_time" content="2023-09-24T07:54:30.000Z">
+<meta property="article:modified_time" content="2023-09-25T07:46:05.748Z">
 <meta property="article:author" content="Cedric Chan">
 <meta property="article:tag" content="拥塞控制">
 <meta name="twitter:card" content="summary">
@@ -106,7 +106,8 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <h2 id="Pantheon-of-Congestion-Control"><a href="#Pantheon-of-Congestion-Control" class="headerlink" title="Pantheon of Congestion Control"></a>Pantheon of Congestion Control</h2><p>Pantheon&#x2F;ˈpænθiɑːn&#x2F;包含许多拥塞控制方案，Pantheon使它们能够在共同的接口上运行，并具有基准测试和比较其性能的工具。Pantheon测试可以在本地使用mahimahi仿真链路进行测试，也可以通过互联网连接远程机器进行测试。</p>
+        <p>[toc] </p>
+<h2 id="Pantheon-of-Congestion-Control"><a href="#Pantheon-of-Congestion-Control" class="headerlink" title="Pantheon of Congestion Control"></a>Pantheon of Congestion Control</h2><p>Pantheon&#x2F;ˈpænθiɑːn&#x2F;包含许多拥塞控制方案，Pantheon使它们能够在共同的接口上运行，并具有基准测试和比较其性能的工具。Pantheon测试可以在本地使用mahimahi仿真链路进行测试，也可以通过互联网连接远程机器进行测试。</p>
 <p>Pantheon的源代码链接：<a target="_blank" rel="noopener" href="https://github.com/StanfordSNR/pantheon#pantheon-of-congestion-control-">StanfordSNR&#x2F;pantheon: Pantheon of Congestion Control (github.com)</a> Pantheon的官网是 <a target="_blank" rel="noopener" href="https://pantheon.stanford.edu/">https://pantheon.stanford.edu</a>，在官网可以找到更多关于Pantheon的信息，包括<strong>支持的拥塞控制方案</strong>，到目前为止在全球测试平台上的测试结果，Pantheon论文在<a target="_blank" rel="noopener" href="https://www.usenix.org/conference/atc18/presentation/yan-francis">USENIX ATC 2018</a>。如果有兴趣，可以在 <a target="_blank" rel="noopener" href="https://github.com/StanfordSNR/observatory">observatory</a>中找到用于运行测试平台的脚本和跟踪（包括“校准仿真器”）。</p>
 <h2 id="免责声明"><a href="#免责声明" class="headerlink" title="免责声明"></a>免责声明</h2><p>Pantheon是学术研究的软件，Pantheon的脚本都写进了<em>pantheon</em>文件夹。Pantheon的脚本从不以root身份运行第三方程序，但不能保证这些第三方程序不会尝试将权限升级到root。</p>
 <p>你可能会想自己安装dependencies和自己运行setup，因为我们方便的脚本将以 root 身份安装软件包并执行一些系统范围的设置（例如，启用 IP 转发、加载内核模式）。请自行承担风险。</p>
@@ -123,16 +124,16 @@
 <ul>
 <li><input checked="" disabled="" type="checkbox"> libutp</li>
 <li><input disabled="" type="checkbox"> proto-quic</li>
-<li><input disabled="" type="checkbox"> pcc</li>
+<li><input checked="" disabled="" type="checkbox"> pcc</li>
 <li><input checked="" disabled="" type="checkbox"> verus</li>
 <li><input checked="" disabled="" type="checkbox"> webrtc</li>
 <li><input checked="" disabled="" type="checkbox"> sprout</li>
-<li><input disabled="" type="checkbox"> pantheon-tunnel</li>
+<li><input checked="" disabled="" type="checkbox"> pantheon-tunnel</li>
 <li><input checked="" disabled="" type="checkbox"> genericCC</li>
 <li><input checked="" disabled="" type="checkbox"> fillp</li>
 <li><input checked="" disabled="" type="checkbox"> vivace</li>
 <li><input checked="" disabled="" type="checkbox"> pcc-experimental</li>
-<li><input disabled="" type="checkbox"> indigo</li>
+<li><input checked="" disabled="" type="checkbox"> indigo</li>
 <li><input checked="" disabled="" type="checkbox"> scream-reproduce</li>
 <li><input checked="" disabled="" type="checkbox"> fillp-sheep</li>
 </ul>
@@ -141,8 +142,7 @@
 <p>检查<em>tools&#x2F;install_deps.sh</em>的代码，如下：</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">#</span><span class="language-bash">!/bin/sh -x</span></span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">update mahimahi <span class="built_in">source</span> line and package listings when necessary</span></span><br><span class="line">sudo add-apt-repository -y ppa:keithw/mahimahi</span><br><span class="line">sudo apt-get update</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">install required packages</span></span><br><span class="line">sudo apt-get -y install mahimahi ntp ntpdate texlive python-pip</span><br><span class="line">sudo pip install matplotlib numpy tabulate pyyaml</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">install pantheon tunnel</span></span><br><span class="line">sudo apt-get -y install debhelper autotools-dev dh-autoreconf iptables \</span><br><span class="line">                        pkg-config iproute2</span><br><span class="line"></span><br><span class="line">CURRDIR=$(cd -P -- &quot;$(dirname -- &quot;$0&quot;)&quot; &amp;&amp; pwd -P)</span><br><span class="line">cd $CURRDIR/../third_party/pantheon-tunnel &amp;&amp; ./autogen.sh &amp;&amp; ./configure \</span><br><span class="line">&amp;&amp; make -j &amp;&amp; sudo make install</span><br></pre></td></tr></table></figure>
 
-<p>由于上面还没安装Pantheon-tunnel模块，因此，先分散执行前半部分安装mahimahi的依赖。<strong>已成功安装</strong></p>
-<p><strong>Panttheon tunnel未安装</strong></p>
+<p><strong>通过一步一步分散执行<em>tools&#x2F;instal_deps.sh</em>命令，已成功安装所有依赖</strong></p>
 <h2 id="Setup"><a href="#Setup" class="headerlink" title="Setup"></a>Setup</h2><p>安装好依赖后，可以执行以下命令进行设置支持的拥塞控制方案：</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">src/experiments/setup.py [--setup] (--all | --shcemes &quot;&lt;cc1&gt; &lt;cc2&gt; ...&quot;)</span><br></pre></td></tr></table></figure>
 
@@ -154,13 +154,16 @@
 
 
 
-<p>博主Setup进展，可支持的拥塞控制方案可以参考<em>src&#x2F;config.yml</em>，里面列出的方案都是可支持的，部分需要上述子模块的支持：</p>
+<p>可支持的拥塞控制方案可以参考<em>src&#x2F;config.yml</em>，里面列出的方案都是可支持的，部分需要上述子模块的支持，由于在安装依赖过程中曾出现过一些问题（例如，quic的源仓库被删除），因此博主采用的是逐个检查安装每个算法。*<em>注意！如果子模块没有全部成功安装，直接运行</em>setup.py*会导致程序卡在更新子模块中，因此需要注释掉#<em>utils.update_submodules()</em> **：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">src/experiments/setup.py --setup --schemes &quot;&lt;cc&gt;&quot;</span><br></pre></td></tr></table></figure>
+
+<p>这样确保每个算法都成功setup，如果出现问题及时解决，提高后面实验的可靠性，确保不会被不知名的安装带来的错误误导。我setup的进展如下：</p>
 <ul>
-<li><input disabled="" type="checkbox"> cubic</li>
-<li><input disabled="" type="checkbox"> vegas</li>
-<li><input disabled="" type="checkbox"> bbr</li>
-<li><input disabled="" type="checkbox"> ledbat</li>
-<li><input disabled="" type="checkbox"> pcc</li>
+<li><input checked="" disabled="" type="checkbox"> cubic</li>
+<li><input checked="" disabled="" type="checkbox"> vegas</li>
+<li><input checked="" disabled="" type="checkbox"> bbr</li>
+<li><input checked="" disabled="" type="checkbox"> ledbat</li>
+<li><input checked="" disabled="" type="checkbox"> pcc</li>
 <li><input disabled="" type="checkbox"> verus</li>
 <li><input disabled="" type="checkbox"> sprout</li>
 <li><input disabled="" type="checkbox"> quic</li>
@@ -174,7 +177,7 @@
 <li><input disabled="" type="checkbox"> indigo</li>
 <li><input disabled="" type="checkbox"> fillp_sheep</li>
 </ul>
-
+<h2 id="读代码时遇到的零碎知识点"><a href="#读代码时遇到的零碎知识点" class="headerlink" title="读代码时遇到的零碎知识点"></a>读代码时遇到的零碎知识点</h2><h3 id="subprocess"><a href="#subprocess" class="headerlink" title="subprocess"></a>subprocess</h3>
       
     </div>
     <footer class="article-footer">
