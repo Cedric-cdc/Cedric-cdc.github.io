@@ -4,20 +4,20 @@
   <meta charset="utf-8">
   
   
-  <title>个人简介 | Cedric`s Blog</title>
+  <title>Python获取微信聊天记录 | Cedric`s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="article">
-<meta property="og:title" content="个人简介">
-<meta property="og:url" content="https://cedric-cdc.github.io/2023/09/23/%E4%B8%AA%E4%BA%BA%E7%AE%80%E4%BB%8B/index.html">
+  <meta name="description" content="Python获取微信聊天记录  写在前面: 本文是博主在网上搜的博客技术，自行使用该技术的再输出过程，查漏补缺； 源博文：chatgpt赋能python：Python如何获取微信聊天记录_python读取微信聊天记录-CSDN博客  需要使用的Python库 wxpy 这是一个微信机器人的API，可以实现一些微信号的自动化操作。官网wxpy · PyPI 安装： 1234#从PYPI官方源下载安装">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python获取微信聊天记录">
+<meta property="og:url" content="https://cedric-cdc.github.io/2023/09/29/Python%E8%8E%B7%E5%8F%96%E5%BE%AE%E4%BF%A1%E8%81%8A%E5%A4%A9%E8%AE%B0%E5%BD%95/index.html">
 <meta property="og:site_name" content="Cedric&#96;s Blog">
+<meta property="og:description" content="Python获取微信聊天记录  写在前面: 本文是博主在网上搜的博客技术，自行使用该技术的再输出过程，查漏补缺； 源博文：chatgpt赋能python：Python如何获取微信聊天记录_python读取微信聊天记录-CSDN博客  需要使用的Python库 wxpy 这是一个微信机器人的API，可以实现一些微信号的自动化操作。官网wxpy · PyPI 安装： 1234#从PYPI官方源下载安装">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://cedric-cdc.github.io/2023/09/23/%E4%B8%AA%E4%BA%BA%E7%AE%80%E4%BB%8B/%E6%96%AF%E8%8E%B1%E7%89%B9%E6%9E%97.jpg">
-<meta property="article:published_time" content="2023-09-23T05:06:26.000Z">
-<meta property="article:modified_time" content="2023-09-23T05:06:26.000Z">
+<meta property="article:published_time" content="2023-09-29T05:29:39.000Z">
+<meta property="article:modified_time" content="2023-09-29T05:29:39.000Z">
 <meta property="article:author" content="Cedric Chan">
-<meta property="article:tag" content="About me">
+<meta property="article:tag" content="Python小妙招">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://cedric-cdc.github.io/2023/09/23/%E4%B8%AA%E4%BA%BA%E7%AE%80%E4%BB%8B/%E6%96%AF%E8%8E%B1%E7%89%B9%E6%9E%97.jpg">
   
     <link rel="alternate" href="/atom.xml" title="Cedric`s Blog" type="application/atom+xml">
   
@@ -80,14 +80,14 @@
 </header>
 
       <div class="outer">
-        <section id="main"><article id="post-个人简介" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-Python获取微信聊天记录" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/2023/09/23/%E4%B8%AA%E4%BA%BA%E7%AE%80%E4%BB%8B/" class="article-date">
-  <time class="dt-published" datetime="2023-09-23T05:06:26.000Z" itemprop="datePublished">2023-09-23</time>
+    <a href="/2023/09/29/Python%E8%8E%B7%E5%8F%96%E5%BE%AE%E4%BF%A1%E8%81%8A%E5%A4%A9%E8%AE%B0%E5%BD%95/" class="article-date">
+  <time class="dt-published" datetime="2023-09-29T05:29:39.000Z" itemprop="datePublished">2023-09-29</time>
 </a>
     
   <div class="article-category">
-    <a class="article-category-link" href="/categories/About-me/">About me</a>
+    <a class="article-category-link" href="/categories/%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/">技术博客</a>
   </div>
 
   </div>
@@ -98,7 +98,7 @@
         
   
     <h1 class="p-name article-title" itemprop="headline name">
-      个人简介
+      Python获取微信聊天记录
     </h1>
   
 
@@ -106,16 +106,36 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p><img src="/2023/09/23/%E4%B8%AA%E4%BA%BA%E7%AE%80%E4%BB%8B/%E6%96%AF%E8%8E%B1%E7%89%B9%E6%9E%97.jpg" alt="个人形象照"></p>
+        <h1 id="Python获取微信聊天记录"><a href="#Python获取微信聊天记录" class="headerlink" title="Python获取微信聊天记录"></a>Python获取微信聊天记录</h1><blockquote>
+<p> 写在前面:</p>
+<p>本文是博主在网上搜的博客技术，自行使用该技术的再输出过程，查漏补缺；</p>
+<p>源博文：<a target="_blank" rel="noopener" href="https://blog.csdn.net/www_xuhss_com/article/details/131079214#:~:text=%E4%BD%BF%E7%94%A8wxpy%E3%80%81Requests%E5%92%8CBeautifulSoup%E5%BA%93%EF%BC%8C%E6%88%91%E4%BB%AC%E5%8F%AF%E4%BB%A5%E8%BD%BB%E6%9D%BE%E5%9C%B0%E8%8E%B7%E5%8F%96%E5%BE%AE%E4%BF%A1%E8%81%8A%E5%A4%A9%E8%AE%B0%E5%BD%95%E5%B9%B6%E8%BF%9B%E8%A1%8C%E5%A4%84%E7%90%86%E3%80%82,%E6%97%A0%E8%AE%BA%E6%98%AF%E7%94%A8%E4%BA%8E%E4%B8%AA%E4%BA%BA%E7%9B%AE%E7%9A%84%E8%BF%98%E6%98%AF%E5%95%86%E4%B8%9A%E7%94%A8%E9%80%94%EF%BC%8CPython%E9%83%BD%E6%98%AF%E4%B8%80%E4%B8%AA%E5%BC%BA%E5%A4%A7%E7%9A%84%E5%B7%A5%E5%85%B7%EF%BC%8C%E5%8F%AF%E4%BB%A5%E5%B8%AE%E5%8A%A9%E7%BC%96%E7%A8%8B%E4%BA%BA%E5%91%98%E5%BF%AB%E9%80%9F%E3%80%81%E5%87%86%E7%A1%AE%E5%9C%B0%E5%A4%84%E7%90%86%E5%90%84%E7%A7%8D%E5%BE%AE%E4%BF%A1%E8%81%8A%E5%A4%A9%E8%AE%B0%E5%BD%95%E3%80%82">chatgpt赋能python：Python如何获取微信聊天记录_python读取微信聊天记录-CSDN博客</a></p>
+</blockquote>
+<h2 id="需要使用的Python库"><a href="#需要使用的Python库" class="headerlink" title="需要使用的Python库"></a>需要使用的Python库</h2><ul>
+<li><p>wxpy</p>
+<p>这是一个微信机器人的API，可以实现一些微信号的自动化操作。官网<a target="_blank" rel="noopener" href="https://pypi.org/project/wxpy/">wxpy · PyPI</a></p>
+<p>安装：</p>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">#从PYPI官方源下载安装</span><br><span class="line">pip install -U wxpy</span><br><span class="line">#或者从豆瓣镜像源下载安装（推荐国内用户选用）</span><br><span class="line">pip install -U wxpy -i &quot;https://pypi.doubanio.com/simple/&quot;</span><br></pre></td></tr></table></figure>
+
+
+</li>
+<li><p>BeautifulSoup</p>
+</li>
+<li><p>Requests</p>
+</li>
+</ul>
+<h2 id="直接上手获取聊天记录"><a href="#直接上手获取聊天记录" class="headerlink" title="直接上手获取聊天记录"></a>直接上手获取聊天记录</h2><p>第一步：创建机器人</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> wxpy <span class="keyword">import</span> *</span><br><span class="line">bot = Bot()</span><br></pre></td></tr></table></figure>
+
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://cedric-cdc.github.io/2023/09/23/%E4%B8%AA%E4%BA%BA%E7%AE%80%E4%BB%8B/" data-id="clmvldkqe000070v304tl084o" data-title="个人简介" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      <a data-url="https://cedric-cdc.github.io/2023/09/29/Python%E8%8E%B7%E5%8F%96%E5%BE%AE%E4%BF%A1%E8%81%8A%E5%A4%A9%E8%AE%B0%E5%BD%95/" data-id="cln5q8d490000e8v38knq26rk" data-title="Python获取微信聊天记录" class="article-share-link"><span class="fa fa-share">分享</span></a>
       
       
       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/About-me/" rel="tag">About me</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Python%E5%B0%8F%E5%A6%99%E6%8B%9B/" rel="tag">Python小妙招</a></li></ul>
 
     </footer>
   </div>
@@ -123,15 +143,11 @@
     
 <nav id="article-nav">
   
-    <a href="/2023/09/23/Midjourney-AI%E7%BB%98%E5%9B%BE/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">前一篇</strong>
-      <div class="article-nav-title">
-        
-          Midjourney-AI绘图
-        
-      </div>
-    </a>
   
+    <a href="/2023/09/29/%E7%AC%AC2%E7%AB%A0-%E5%83%8F%E7%BB%8F%E6%B5%8E%E5%AD%A6%E5%AE%B6%E4%B8%80%E6%A0%B7%E6%80%9D%E8%80%83/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">后一篇</strong>
+      <div class="article-nav-title">第2章 像经济学家一样思考</div>
+    </a>
   
 </nav>
 

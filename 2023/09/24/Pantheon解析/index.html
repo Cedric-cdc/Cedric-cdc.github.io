@@ -14,7 +14,7 @@
 <meta property="og:description" content="[toc]  Pantheon of Congestion ControlPantheon&#x2F;ˈpænθiɑːn&#x2F;包含许多拥塞控制方案，Pantheon使它们能够在共同的接口上运行，并具有基准测试和比较其性能的工具。Pantheon测试可以在本地使用mahimahi仿真链路进行测试，也可以通过互联网连接远程机器进行测试。 Pantheon的源代码链接：StanfordSNR&amp;#x">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-09-24T07:54:30.000Z">
-<meta property="article:modified_time" content="2023-09-25T07:46:05.748Z">
+<meta property="article:modified_time" content="2023-09-25T08:47:16.378Z">
 <meta property="article:author" content="Cedric Chan">
 <meta property="article:tag" content="拥塞控制">
 <meta name="twitter:card" content="summary">
@@ -164,20 +164,36 @@
 <li><input checked="" disabled="" type="checkbox"> bbr</li>
 <li><input checked="" disabled="" type="checkbox"> ledbat</li>
 <li><input checked="" disabled="" type="checkbox"> pcc</li>
-<li><input disabled="" type="checkbox"> verus</li>
-<li><input disabled="" type="checkbox"> sprout</li>
+<li><input checked="" disabled="" type="checkbox"> verus</li>
+<li><input checked="" disabled="" type="checkbox"> sprout</li>
 <li><input disabled="" type="checkbox"> quic</li>
 <li><input disabled="" type="checkbox"> scream</li>
 <li><input disabled="" type="checkbox"> webrtc</li>
-<li><input disabled="" type="checkbox"> copa</li>
-<li><input disabled="" type="checkbox"> taova</li>
-<li><input disabled="" type="checkbox"> vivace</li>
-<li><input disabled="" type="checkbox"> pcc_experimental</li>
-<li><input disabled="" type="checkbox"> fillp</li>
-<li><input disabled="" type="checkbox"> indigo</li>
-<li><input disabled="" type="checkbox"> fillp_sheep</li>
+<li><input checked="" disabled="" type="checkbox"> copa</li>
+<li><input checked="" disabled="" type="checkbox"> taova</li>
+<li><input checked="" disabled="" type="checkbox"> vivace</li>
+<li><input checked="" disabled="" type="checkbox"> pcc_experimental</li>
+<li><input checked="" disabled="" type="checkbox"> fillp</li>
+<li><input checked="" disabled="" type="checkbox"> indigo</li>
+<li><input checked="" disabled="" type="checkbox"> fillp_sheep</li>
 </ul>
-<h2 id="读代码时遇到的零碎知识点"><a href="#读代码时遇到的零碎知识点" class="headerlink" title="读代码时遇到的零碎知识点"></a>读代码时遇到的零碎知识点</h2><h3 id="subprocess"><a href="#subprocess" class="headerlink" title="subprocess"></a>subprocess</h3>
+<h2 id="运行Pantheon"><a href="#运行Pantheon" class="headerlink" title="运行Pantheon"></a>运行Pantheon</h2><p>在本地仿真网络测试拥塞控制方案，运行如下命令：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">src/experiments/test.py local (-all | --schemes &quot;&lt;cc1&gt; &lt;cc2&gt; ...&quot;)</span><br></pre></td></tr></table></figure>
+
+<p><em>src&#x2F;experiments&#x2F;test.py</em> 代码剖析：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">太长了，下次一定</span><br></pre></td></tr></table></figure>
+
+
+
+<p>博主测试进度：</p>
+<h2 id="读代码时遇到的零碎知识点"><a href="#读代码时遇到的零碎知识点" class="headerlink" title="读代码时遇到的零碎知识点"></a>读代码时遇到的零碎知识点</h2><h3 id="subprocess"><a href="#subprocess" class="headerlink" title="subprocess"></a>subprocess</h3><h3 id="yaml是什么"><a href="#yaml是什么" class="headerlink" title="yaml是什么"></a>yaml是什么</h3><p>YAML是一种友好的数据序列化语言，可以用于写各种配置文件。<a target="_blank" rel="noopener" href="https://yaml.org/">The Official YAML Web Site</a></p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">A:</span> <span class="string">2O</span></span><br><span class="line"><span class="attr">b:</span> <span class="number">100</span></span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
       
     </div>
     <footer class="article-footer">
@@ -192,6 +208,15 @@
   
     
 <nav id="article-nav">
+  
+    <a href="/2023/09/29/%E7%AC%AC2%E7%AB%A0-%E5%83%8F%E7%BB%8F%E6%B5%8E%E5%AD%A6%E5%AE%B6%E4%B8%80%E6%A0%B7%E6%80%9D%E8%80%83/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">前一篇</strong>
+      <div class="article-nav-title">
+        
+          第2章 像经济学家一样思考
+        
+      </div>
+    </a>
   
   
     <a href="/2023/09/23/%E7%AC%AC1%E7%AB%A0-%E7%BB%8F%E6%B5%8E%E5%AD%A6%E5%8D%81%E5%A4%A7%E5%8E%9F%E7%90%86/" id="article-nav-older" class="article-nav-link-wrap">
@@ -223,7 +248,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">标签</h3>
     <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/AI/" rel="tag">AI</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/About-me/" rel="tag">About me</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%8B%A5%E5%A1%9E%E6%8E%A7%E5%88%B6/" rel="tag">拥塞控制</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%9B%BC%E6%98%86%E3%80%8A%E7%BB%8F%E6%B5%8E%E5%AD%A6%E5%8E%9F%E7%90%86%C2%B7%E5%BE%AE%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6%E3%80%8B/" rel="tag">曼昆《经济学原理·微观经济学》</a></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/AI/" rel="tag">AI</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/About-me/" rel="tag">About me</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Python%E5%B0%8F%E5%A6%99%E6%8B%9B/" rel="tag">Python小妙招</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%8B%A5%E5%A1%9E%E6%8E%A7%E5%88%B6/" rel="tag">拥塞控制</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%9B%BC%E6%98%86%E3%80%8A%E7%BB%8F%E6%B5%8E%E5%AD%A6%E5%8E%9F%E7%90%86%C2%B7%E5%BE%AE%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6%E3%80%8B/" rel="tag">曼昆《经济学原理·微观经济学》</a></li></ul>
     </div>
   </div>
 
@@ -233,7 +258,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">标签云</h3>
     <div class="widget tagcloud">
-      <a href="/tags/AI/" style="font-size: 10px;">AI</a> <a href="/tags/About-me/" style="font-size: 10px;">About me</a> <a href="/tags/%E6%8B%A5%E5%A1%9E%E6%8E%A7%E5%88%B6/" style="font-size: 10px;">拥塞控制</a> <a href="/tags/%E6%9B%BC%E6%98%86%E3%80%8A%E7%BB%8F%E6%B5%8E%E5%AD%A6%E5%8E%9F%E7%90%86%C2%B7%E5%BE%AE%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6%E3%80%8B/" style="font-size: 10px;">曼昆《经济学原理·微观经济学》</a>
+      <a href="/tags/AI/" style="font-size: 10px;">AI</a> <a href="/tags/About-me/" style="font-size: 10px;">About me</a> <a href="/tags/Python%E5%B0%8F%E5%A6%99%E6%8B%9B/" style="font-size: 10px;">Python小妙招</a> <a href="/tags/%E6%8B%A5%E5%A1%9E%E6%8E%A7%E5%88%B6/" style="font-size: 10px;">拥塞控制</a> <a href="/tags/%E6%9B%BC%E6%98%86%E3%80%8A%E7%BB%8F%E6%B5%8E%E5%AD%A6%E5%8E%9F%E7%90%86%C2%B7%E5%BE%AE%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6%E3%80%8B/" style="font-size: 20px;">曼昆《经济学原理·微观经济学》</a>
     </div>
   </div>
 
@@ -255,6 +280,14 @@
       <ul>
         
           <li>
+            <a href="/2023/09/29/Python%E8%8E%B7%E5%8F%96%E5%BE%AE%E4%BF%A1%E8%81%8A%E5%A4%A9%E8%AE%B0%E5%BD%95/">Python获取微信聊天记录</a>
+          </li>
+        
+          <li>
+            <a href="/2023/09/29/%E7%AC%AC2%E7%AB%A0-%E5%83%8F%E7%BB%8F%E6%B5%8E%E5%AD%A6%E5%AE%B6%E4%B8%80%E6%A0%B7%E6%80%9D%E8%80%83/">第2章 像经济学家一样思考</a>
+          </li>
+        
+          <li>
             <a href="/2023/09/24/Pantheon%E8%A7%A3%E6%9E%90/">Pantheon解析</a>
           </li>
         
@@ -264,10 +297,6 @@
         
           <li>
             <a href="/2023/09/23/Midjourney-AI%E7%BB%98%E5%9B%BE/">Midjourney-AI绘图</a>
-          </li>
-        
-          <li>
-            <a href="/2023/09/23/%E4%B8%AA%E4%BA%BA%E7%AE%80%E4%BB%8B/">个人简介</a>
           </li>
         
       </ul>
